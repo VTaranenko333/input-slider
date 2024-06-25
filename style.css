@@ -1,0 +1,75 @@
+.tabs-container {
+    display: flex;
+}
+
+.label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.label>img {
+    width: 100%;
+}
+
+.content {
+    width: 300px;
+}
+
+.content>img {
+    width: 100%;
+}
+
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.tabs:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 240px;
+}
+
+.tabs li {
+    float: left;
+}
+
+.tabs li>input {
+    display: none;
+}
+
+.tabs li>label {
+    display: inline-block;
+    border: 1px solid #999;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tabs li:last-child>label {
+    border-right-width: 1px;
+}
+
+.tabs .content {
+    display: none;
+    position: absolute;
+    left: 0;
+    border: 1px solid #bebec5;
+    height: auto;
+}
+
+.tabs li>input:checked+label {
+    background-color: #1511e9;
+}
+
+.tabs li>input:checked~.content {
+    display: flex;
+}
