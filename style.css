@@ -76,12 +76,14 @@
 
 
 body{
+
     background-color: #fbfbfb;
 }
 
 .gallery-wrapp {
     display: flex;
     gap: 20px;  
+    height: 558px;
 }
 
 .gallery {
@@ -98,8 +100,8 @@ body{
   }
   
   .gallery img {
-    width: 96px;
-    height: auto;
+    /* width: 96px;
+    height: auto; */
     cursor: pointer;
   }
   
@@ -107,8 +109,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 80px 50px;
     width: 428px;
-    height: 558px;
+    height: auto;
     /* border: 1px solid #ccc; */
     border-radius: 20px;
     background-color: #F3F3F3;
