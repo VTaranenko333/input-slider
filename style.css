@@ -1,4 +1,4 @@
-.tabs-container {
+/* .tabs-container {
     display: flex;
 }
 
@@ -72,4 +72,44 @@
 
 .tabs li>input:checked~.content {
     display: flex;
+} */
+
+
+body{
+    background-color: #fbfbfb;
 }
+
+.gallery-wrapp {
+    display: flex;
+    gap: 20px;  
+}
+
+.gallery {
+    width: 132px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-container{
+    padding: 16px 18px;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+  }
+  
+  .gallery img {
+    width: 96px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .main-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 428px;
+    height: 558px;
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    background-color: #F3F3F3;
+  }
